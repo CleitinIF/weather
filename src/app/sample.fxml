@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="290.0" minWidth="495.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane minHeight="290.0" minWidth="495.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
    <children>
       <Pane minHeight="290.0" minWidth="495.0">
          <children>
@@ -17,7 +17,7 @@
                   <Font name="Roboto" size="12.0" />
                </font>
             </Label>
-            <TextField fx:id="tfCity" layoutX="14.0" layoutY="109.0" prefHeight="26.0" prefWidth="202.0" promptText="São Paulo, BR" />
+            <TextField fx:id="tfCity" layoutX="14.0" layoutY="109.0" onKeyPressed="#handleKeyPress" prefHeight="26.0" prefWidth="202.0" promptText="São Paulo, BR" />
             <Button fx:id="btnSearch" layoutX="14.0" layoutY="143.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="26.0" prefWidth="202.0" text="Buscar">
                <font>
                   <Font name="Roboto" size="12.0" />
@@ -79,7 +79,7 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <ProgressIndicator visible="false" fx:id="piLoading" layoutX="110.0" layoutY="116.0" progress="0.0" />
+                  <ProgressIndicator fx:id="piLoading" layoutX="110.0" layoutY="116.0" progress="0.0" visible="false" />
                </children>
             </Pane>
          </children></Pane>
