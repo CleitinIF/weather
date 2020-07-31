@@ -4,6 +4,7 @@ module Teste {
 	requires httpclient;
 	requires httpcore;
 	requires com.google.gson;
+	requires junit;
 
-	opens sample;
+	opens app;
 }
