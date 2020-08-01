@@ -5,5 +5,5 @@ module Teste {
 	requires httpcore;
 	requires com.google.gson;
 
-	opens sample;
+	opens app;
 }
