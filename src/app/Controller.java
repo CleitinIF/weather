@@ -1,5 +1,8 @@
 package app;
 
+import app.models.CurrentWeatherModel;
+import app.models.WeekWeatherModel;
+import app.utils.StringUtils;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import javafx.scene.control.*;
@@ -62,8 +65,6 @@ public class Controller {
 	public Label lblWTempMax4;
 	public Label lblWTempMax5;
 
-	public ProgressIndicator piLoading;
-
 	private Alert alert = new Alert(Alert.AlertType.ERROR);
 
 	private CurrentWeatherModel currentWeather;
@@ -124,8 +125,6 @@ public class Controller {
 
 		} catch (IOException err) {
 
-		} finally {
-//			piLoading.setVisible(false);
 		}
 	}
 
@@ -215,15 +214,13 @@ public class Controller {
 
 		} catch (IOException err) {
 
-		} finally {
-//			piLoading.setVisible(false);
 		}
 	}
 
 	private String formatTextInput(String text) {
 		StringUtils stringUtils = new StringUtils();
 
-		text = stringUtils.RemoveSpecialCharacter(text);
+		text = stringUtils.removeSpecialCharacters(text);
 		text = stringUtils.convertSpaces(text);
 		text = stringUtils.replaceComma(text);
 
