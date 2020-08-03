@@ -1,1 +1,1 @@
-java --module-path ~/javafx/javafx-sdk-14.0.2.1/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web -jar ./Weather.jar
+java --module-path ../../../libs/javafx-sdk-11.0.2/lib/ --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web -jar ./Weather.jar
