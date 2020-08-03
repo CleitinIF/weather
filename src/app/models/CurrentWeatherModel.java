@@ -13,6 +13,8 @@ public class CurrentWeatherModel {
 	public String wind;
 	public String humidity;
 	public String temp;
+	public String tempMin;
+	public String tempMax;
 	public String weatherDescription;
 
 	public String lon;
@@ -25,6 +27,9 @@ public class CurrentWeatherModel {
 		JsonObject temp = object.get("main").getAsJsonObject();
 
 		this.temp = Integer.toString(temp.get("temp").getAsInt());
+		this.tempMin = Integer.toString(temp.get("temp_min").getAsInt());
+		this.tempMax = Integer.toString(temp.get("temp_max").getAsInt());
+
 		this.humidity = Integer.toString(temp.get("humidity").getAsInt());
 
 		JsonObject wind = object.get("wind").getAsJsonObject();

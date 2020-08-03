@@ -10,7 +10,8 @@
     <orderEntry type="library" name="javafx14" level="application" />
     <orderEntry type="library" name="org.apache.httpcomponents:httpclient:4.0.3" level="project" />
     <orderEntry type="library" name="com.google.code.gson:gson:2.8.6" level="project" />
-    <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="junit:junit:4.13" level="project" />
+    <orderEntry type="library" name="javafx" level="project" />
+    <orderEntry type="library" name="lib" level="application" />
   </component>
 </module>

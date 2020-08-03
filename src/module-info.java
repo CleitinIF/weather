@@ -6,7 +6,7 @@ module Weather {
 	requires com.google.gson;
 	requires junit;
 
-	opens app;
+	opens app.ui;
 
 	exports tests;
 }
