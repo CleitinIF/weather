@@ -1,4 +1,4 @@
-module Teste {
+module Weather {
 	requires javafx.fxml;
 	requires javafx.controls;
 	requires httpclient;
@@ -6,5 +6,7 @@ module Teste {
 	requires com.google.gson;
 	requires junit;
 
-	opens app;
+	opens app.ui;
+
+	exports tests;
 }

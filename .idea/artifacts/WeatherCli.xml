@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WeatherCli">
+    <output-path>$PROJECT_DIR$/out/artifacts/WeatherCli</output-path>
+    <root id="archive" name="WeatherCli.jar">
+      <element id="module-output" name="Weather" />
+      <element id="library" level="project" name="com.google.code.gson:gson:2.8.6" />
+      <element id="library" level="project" name="org.apache.httpcomponents:httpclient:4.0.3" />
+    </root>
+  </artifact>
+</component>
