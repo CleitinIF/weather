@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
 public class WeekWeatherRequest {
 	public static JsonObject request(String lat, String lon) throws IOException {
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=metric&exclude=current,minute,hourly&APPID=8b3538109fbb0da4554d4d6cf409d6e8";
+		String uri = "http://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=metric&exclude=current,minute,hourly&APPID=82022ed31d54aa1bdffa0f568afd4ab7";
 		HttpGet request = new HttpGet(uri);
 
 		try {
