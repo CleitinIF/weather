@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 public class CurrentWeatherRequest {
 	public static JsonObject request(String city) {
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&lang=pt_br&units=metric&APPID=8b3538109fbb0da4554d4d6cf409d6e8";
+		String uri = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&lang=pt_br&units=metric&APPID=82022ed31d54aa1bdffa0f568afd4ab7";
 		HttpGet request = new HttpGet(uri);
 
 		try {
